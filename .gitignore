@@ -1,0 +1,7 @@
+
+src/**/.vs/*
+src/**/bin/*
+src/**/obj/*
+demo/**/.vs/*
+demo/**/bin/*
+demo/**/obj/*
