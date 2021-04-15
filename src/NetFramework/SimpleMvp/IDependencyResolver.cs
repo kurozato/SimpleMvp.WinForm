@@ -22,3 +22,4 @@ namespace BlackSugar.SimpleMvp
         object Resolve(Type serviceType);
     }
 }
+

@@ -37,7 +37,7 @@ namespace BlackSugar.SimpleMvp.WinForm
 
         }
 
-        private bool? IsDisposed(TView view)
+        protected bool? IsDisposed(TView view)
         {
             var form = view as Form;
             return form?.IsDisposed;

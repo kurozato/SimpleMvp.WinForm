@@ -16,11 +16,12 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
+    <Optimize>true</Optimize>
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\BlackSugar.SimpleMvp.WinForm.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -29,6 +30,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\BlackSugar.SimpleMvp.WinForm.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -43,7 +45,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IDependencyResolver.cs" />
+    <Compile Include="Presenter.cs" />
     <Compile Include="PresenterBase.cs" />
+    <Compile Include="ViewForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="XApplication.cs" />
     <Compile Include="IPresenter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
