@@ -47,10 +47,10 @@
     <Compile Include="IDependencyResolver.cs" />
     <Compile Include="Presenter.cs" />
     <Compile Include="PresenterBase.cs" />
+    <Compile Include="Router.cs" />
     <Compile Include="ViewForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="XApplication.cs" />
     <Compile Include="IPresenter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

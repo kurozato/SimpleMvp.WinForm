@@ -12,6 +12,12 @@ namespace BlackSugar.SimpleMvp.WinForm
     {
         protected bool shown;
 
+        public override void Initialize()
+        {
+            shown = !initialize;
+            base.Initialize();
+        }
+
         public override object Show(bool modal)
         {
             var view = _view as IView;

@@ -20,13 +20,13 @@ var resolver = new DependencyResolver();
 resolver.Set(container);
 
 // Set DependencyResolver
-XApplication.Configure(resolver);
+Router.Configure(resolver);
 
 //Get View (initialized by presenter)
-var view = XApplication.NavigateTo<IView>();
+var view = Router.NavigateTo<IView>();
 
 //Show View (initialized by presenter) and return result
-var result = XApplication.NavigateTo<IView>(true);
+var result = Router.NavigateTo<IView>(true);
 ```
 
 ### Make DependencyResolver
